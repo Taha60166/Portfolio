@@ -110,7 +110,7 @@
      its clean grid rather than showing a fake screenshot. Preloaded first so it
      fades in complete instead of painting halfway through the animation. */
   const heroPlate = $("#heroPlate");
-  if (heroPlate) {
+  if (heroPlate && !heroPlate.querySelector("video")) {
     const art = (D.projects || []).find((p) => p.poster || getYoutubeId(p.youtube));
     if (art) {
       const posterSrc = art.poster || (getYoutubeId(art.youtube) ? `https://img.youtube.com/vi/${getYoutubeId(art.youtube)}/maxresdefault.jpg` : "");
@@ -418,8 +418,6 @@
           ${p.links && p.links.download ? `<a class="btn btn--ghost" href="${esc(p.links.download)}" target="_blank" rel="noopener noreferrer">Download</a>` : ""}
           <a class="btn btn--line" href="#contact" data-close>Ask me about this project</a>
         </div>
-
-        ${!hasVideo || !(p.links && (p.links.play || p.links.github)) ? `<p class="mnote">Placeholder content — fill this project in inside <strong>assets/js/content.js</strong>, then drop preview video in <strong>assets/video/</strong> and screenshots in <strong>assets/img/</strong>.</p>` : ""}
       </div>`;
   }
 

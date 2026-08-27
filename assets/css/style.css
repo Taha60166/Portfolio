@@ -346,6 +346,7 @@ input,textarea{ font:inherit; color:inherit; }
    "this person makes games" in peripheral vision, not compete with the H1. */
 .hero__plate{
   position:absolute; inset:0;
+  overflow:hidden;
   background-position:center 44%;
   background-size:cover;
   background-repeat:no-repeat;
@@ -359,6 +360,11 @@ input,textarea{ font:inherit; color:inherit; }
      re-compositing for as long as the hero is on screen, on top of the particle
      canvas's own rAF loop. It runs once and then stops costing anything. */
   animation:platePush 2s var(--ease-out) .25s forwards;
+}
+.hero__video{
+  width:100%; height:100%;
+  object-fit:cover; object-position:center;
+  display:block;
 }
 @keyframes platePush{ to{ opacity:.26; transform:scale(1.06); } }
 
