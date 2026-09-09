@@ -44,7 +44,7 @@ window.PORTFOLIO = {
       "up advanced animation layers, coding AI with NavMesh, or heavily optimizing performance with occlusion culling, " +
       "light baking, and URP shaders.",
 
-      "I recently graduated with a degree in Computer Science from BUITEMS in Quetta (3.7 CGPA) and hold 4 Game Design and Development " +
+      "I recently graduated with a degree in Computer Science from BUITEMS in Quetta (3.663 CGPA) and hold 4 Game Design and Development " +
       "certifications from Michigan State University. I'm constantly learning new tools, pushing the boundaries of what I can build in Unity, " +
       "and looking forward to exploring the Roblox Engine in the future."
     ],
